@@ -24,9 +24,7 @@ void loop() {
     float theta;
     if (posicion != temp){
         theta = posicion*360.0/resolution;
-        Serial.print("Ángulo: ");
-        Serial.print(theta);
-        Serial.println("°");
+        Serial.println(theta);
         temp = posicion;
     }
 }
